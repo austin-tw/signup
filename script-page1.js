@@ -19,6 +19,6 @@ clientmail.addEventListener("input", (event) => {
     clientmail.setCustomValidity("Please enter a correct email address");
     console.log(event);
   } else {
-    clientmail.setCusomValidity("");
+    clientmail.setCustomValidity("");
   }
 });
