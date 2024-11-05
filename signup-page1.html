@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="script-page1.js" defer></script>
+  <title>Sign-up</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo-box" href="">
+        <img src="white-logo-crypta.svg" alt="a logo consists of a portcullis and the brand Crypta to the right"
+          id="main-logo" width="693.06" height="161.52"></a>
+      <div id="link-box">
+        <a href="#">Explore</a>
+        <a href="#">Prices</a>
+        <a href="#">About Crypta</a>
+        <a href="#">Support</a>
+        <a href="#" class="sign-in">Sign In</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Create an Account</h1>
+    <section class="form-box">
+      <h2>Personal Information</h2>
+      <form action="signup-page2.html" method="post" id="form">
+        <div>
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" placeholder="2 to 30 characters" required maxlength="30" pattern="\w{2,30}">
+        </div>
+        <div>
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" placeholder="2 to 40 characters" required maxlength="30" pattern="\w{2,40}">
+        </div>
+        <div>
+          <label for="clientmail">Email</label>
+          <input type="email" pattern=".{2,99}" id="clientmail" placeholder="joe@mail.com" required>
+        </div>
+        <div>
+          <label for="password">Create a Password</label>
+          <input type="password" id="password" pattern=".{9,}" placeholder="9 characters or more" required>
+        </div>
+        <div>
+          <label for="confirm_password">Re-enter Password</label>
+          <input type="password" id="confirm_password" pattern=".{9,}" placeholder="must match the password above"
+            required>
+        </div>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" min="1900-01-01" required>
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="1234567890 (10 digits, no dash)" pattern="\d{10}"
+            required>
+        </div>
+        <div>
+          <label for="address">Street Address:</label>
+          <input type="text" id="address" name="address" placeholder="123 Main St" pattern=".{2,99}" required>
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" placeholder="Enter your city" pattern="\w{2,50}" required>
+        </div>
+        <div>
+          <label for="province">Province/Territory:</label>
+          <select id="province" name="province" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NT">Northwest Territories</option>
+            <option value="NU">Nunavut</option>
+            <option value="YT">Yukon</option>
+          </select>
+        </div>
+        <div>
+          <label for="postalcode">Postal Code:</label>
+          <input type="text" id="postalcode" name="postalcode" placeholder="A1B2C3 (no space)" required
+            pattern="[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d">
+        </div>
+        <div>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" value="checked" required>
+            I am over 18 and agree to the
+            <a href="#agreementModal">terms and agreements</a>.</label>
+        </div>
+
+        <input type="submit" class="submit-button" value="Continue">
+      </form>
+    </section>
+  </main>
+  <!--============================ Footer=======================-->
+  <footer>
+    <div class="footer-box">
+      <p>
+        © 2011 - 2024 Crypta, Inc.
+        <a href="mailto:crypta@crypta.com">crypta@crypta.com</a>
+      </p>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms and Agreements</a>
+      <a href="">Cookie Settings</a>
+      <a href="">Disclosures</a>
+    </div>
+  </footer>
+  <!--============================ Modal =======================-->
+  <div id="agreementModal" class="modal">
+    <article class="modal-content">
+      <a href="#" class="x-close">&times;</a>
+      <h3>Terms and Conditions</h3>
+      <h4>The Risks of Investing in Crypto Assets</h4>
+      <p>
+        The prices and liquidity of crypto assets can be extremely
+        unpredictable, often swinging dramatically within a single day. This
+        means you could lose some or even all of the value of your crypto
+        holdings at any moment.
+      </p>
+      <p>
+        Crypto assets aren’t recognized as legal tender and aren't backed by
+        any government or central bank. Unlike the money in your bank account,
+        crypto doesn’t have the same protections or regulatory backing that
+        can step in to stabilize value in times of crisis.
+      </p>
+      The value of crypto assets largely depends on the willingness of others
+      in the market to buy and use them. If confidence drops, demand could
+      plummet compared to supply, potentially causing a total loss of value if
+      the market for a particular crypto disappears.
+      <p>
+        Since crypto assets and blockchain technology are relatively new,
+        they’re still evolving and facing technical developments that could
+        impact their value. Although the crypto community has overcome a range
+        of challenges since the start of Bitcoin, there’s no guarantee it will
+        continue to do so. If development or community support slows down or
+        disputes arise, it could negatively affect the value of a crypto
+        asset.
+      </p>
+      <p>
+        At Crypta, we really care about keeping our users' information safe
+        and secure. When you use our platform, you're agreeing to share some
+        personal and financial details that are necessary for making
+        cryptocurrency transactions and investments. This might include things
+        like your name, email, phone number, and financial info. We promise to
+        handle your data with care and only share it with trusted third-party
+        partners who help us provide our services. We don’t sell or share your
+        information with anyone who isn’t authorized. We believe in being
+        transparent, so you can review and update your info whenever you want.
+        By continuing to use Crypta, you acknowledge that you understand and
+        agree with how we handle your information, as explained in our Privacy
+        Policy.
+      </p>
+    </article>
+  </div>
+</body>
+
+</html>

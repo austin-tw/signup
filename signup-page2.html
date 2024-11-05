@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="script-page2.js" defer></script>
+  <title>Sign-up</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a id="logo-box" href="">
+        <img src="white-logo-crypta.svg" alt="a logo consists of a portcullis and the brand Crypta to the right"
+          id="main-logo" width="693.06" height="161.52"></a>
+      <div id="link-box">
+        <a href="#">Explore</a>
+        <a href="#">Prices</a>
+        <a href="#">About Crypta</a>
+        <a href="#">Support</a>
+        <a href="#" class="sign-in">Sign In</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Create an Account</h1>
+    <section class="form-box">
+      <h2>Financial Information</h2>
+      <form action="#" method="post" id="form">
+        <div>
+          <label for="experience">Years of Investment Experience</label>
+          <input id="experience" type="range" min="0" max="30" value="0">
+          <output for="experience" id="years">0</output>
+        </div>
+        <div>
+          <label for="income">Annual Income:</label>
+          <select id="income" name="income" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="≥200000">$200,000 CAD or more</option>
+            <option value="100000-199999">$100,000 - $199,999 CAD</option>
+            <option value="50000-99999">$50,000 - $99,999 CAD</option>
+            <option value="0-50000">Less than $50,000 CAD</option>
+          </select>
+        </div>
+        <div>
+          <label for="risk">Risk Tolerance: (How much of your asset at Crypta are you willing
+            to risk losing due to market fluctuation?)</label>
+          <select id="risk" name="risk" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="all">Willing to risk losing all</option>
+            <option value="most">Willing to risk losing most</option>
+            <option value="small portion">
+              Willing to risk a small portion
+            </option>
+            <option value="none">Unwilling to risk any asset</option>
+          </select>
+        </div>
+        <div>
+          <label for="primary-goal">Primary Investment Goal:</label>
+          <select id="primary-goal" name="primary-goal" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Wealth Building">Wealth Building</option>
+            <option value="Retirement Planning">Retirement Planning</option>
+            <option value="Steady Income">Steady Income Generation</option>
+            <option value="Capital Preservation">
+              Capital Preservation Against Inflation
+            </option>
+            <option value="Diversification">Diversification</option>
+            <option value="Education Funding">Education Funding</option>
+            <option value="Home Ownership">Home Ownership</option>
+          </select>
+        </div>
+        <div>
+          <label for="secondary-goal">Secondary Investment Goal:</label>
+          <select id="secondary-goal" name="secondary-goal" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Wealth Building">Wealth Building</option>
+            <option value="Retirement Planning">Retirement Planning</option>
+            <option value="Steady Income">Steady Income Generation</option>
+            <option value="Capital Preservation">
+              Capital Preservation Against Inflation
+            </option>
+            <option value="Diversification">Diversification</option>
+            <option value="Education Funding">Education Funding</option>
+            <option value="Home Ownership">Home Ownership</option>
+          </select>
+        </div>
+
+        <!-- ================Bank Info============== -->
+        <div>
+          <label for="bank-firstname">Bank Account Holder First Name:</label>
+          <input type="text" id="bank-firstname" placeholder="2 to 30 characters" required maxlength="30"
+            pattern="\w{2,30}">
+        </div>
+        <div>
+          <label for="bank-lastname">Bank Account Holder Last Name:</label>
+          <input type="text" id="bank-lastname" placeholder="2 to 40 characters" required maxlength="30"
+            pattern="\w{2,40}">
+        </div>
+        <div>
+          <label for="bank-name">Bank Name:</label>
+          <input type="text" id="bank-name" name="bank_name" pattern="\w{2,99}"
+            placeholder="ABC Bank (2 to 99 characters)" required>
+        </div>
+        <div>
+          <label for="institution-number">Bank Institution Number:</label>
+          <input type="text" id="institution-number" name="institution_number" pattern="\d{3}" maxlength="3"
+            placeholder="3 digits" required>
+        </div>
+        <div>
+          <label for="transit-number">Bank Transit Number:</label>
+          <input type="text" id="transit-number" name="transit_number" pattern="\d{5}" maxlength="5"
+            placeholder="5 digits" required>
+        </div>
+        <div>
+          <label for="account-number">Bank Account Number:</label>
+          <input type="text" id="account-number" name="account_number" pattern="\d{7,12}" maxlength="12"
+            placeholder="7 to 12 digits" required>
+        </div>
+
+        <input type="submit" class="submit-button" value="Submit">
+      </form>
+    </section>
+  </main>
+  <!--============ Footer ===================-->
+  <footer>
+    <div class="footer-box">
+      <p>
+        © 2011 - 2024 Crypta, Inc.
+        <a href="mailto:crypta@crypta.com">crypta@crypta.com</a>
+      </p>
+      <a href="">Privacy Policy</a>
+      <a href="">Terms and Agreements</a>
+      <a href="">Cookie Settings</a>
+      <a href="">Disclosures</a>
+    </div>
+  </footer>
+</body>
+
+</html>
